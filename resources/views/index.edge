@@ -1,0 +1,32 @@
+@layout('layouts/main')
+
+@section('content')
+    <h1>Roughed In API</h1>
+    <p>This site contains roughed in endpoints emulating the naming for a few API resources in the PayPal web services.</p>
+    <p>Each endpoint has stubs for get, get (detail), post, put and delete. Methods for html display are intentionally omitted. All endpoints return the same error message "Not Yet Implemented." </p>
+
+
+    <h3>Payments</h3>
+    <ul class="list-group">
+        <li class="list-group-item"><a href="/api/v1/payments/payment">Payment - /api/v1/payments/payment</a></li>
+        <li class="list-group-item"><a href="/api/v1/payments/sale">Sale - /api/v1/payments/sale</a></li>
+        <li class="list-group-item"><a href="/api/v1/payments/authorization">Authorization - /api/v1/payments/authorization</a></li>
+        <li class="list-group-item"><a href="/api/v1/payments/orders">Orders - /api/v1/payments/orders</a></li>
+        <li class="list-group-item"><a href="/api/v1/payments/capture">Capture - /api/v1/payments/capture</a></li>
+        <li class="list-group-item"><a href="/api/v1/payments/refund">Refund - /api/v1/payments/refund</a></li>
+        <li class="list-group-item"><a href="/api/v1/payments/billing-plans">Billing Plans - /api/v1/payments/billing-plans</a></li>
+        <li class="list-group-item"><a href="/api/v1/payments/payouts">Payouts - /api/v1/payments/payouts</a></li>
+    </ul>
+    &nbsp;
+    
+    <h3>Vault</h3>
+    <ul class="list-group">
+        <li class="list-group-item"><a href="/api/v1/vault/credit-cards">Credit Cards - /api/v1/vault/credit-cards</a></li>
+    </ul>
+    &nbsp;
+
+    <h3>Identity</h3>
+    <ul class="list-group">
+        <li class="list-group-item"><a href="/api/v1/identity/userinfo">Userinfo - /api/v1/identity/userinfo</a></li>
+    </ul>
+@endsection
